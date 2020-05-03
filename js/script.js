@@ -6,3 +6,23 @@ if(is_android) {
 
 }
 // -- !Select menu --
+
+const init = () => {
+    function update() {
+        let next = false;
+
+        sections.forEach(section => {
+            const current = link(section.id);
+
+            if (inView(section) && !next) {
+                current.classList.add('current');
+                next = true;
+            } else {
+                current.classList.remove('current');
+            }
+        });
+    }
+
+    update();
+    window.addEventListener('scroll', update);
+};

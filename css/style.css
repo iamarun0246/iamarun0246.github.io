@@ -15,20 +15,6 @@ body{
     margin: 0;
 }
 
-.heading{
-    text-align: center;
-}
-
-.heading span{
-    font-weight: 500;
-    font-size: 25px;
-}
-
-.heading a{
-    text-decoration: none;
-    color: chartreuse;
-}
-
 section{
     background: var(--color);
     height: 100vh;
